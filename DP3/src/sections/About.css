@@ -1,0 +1,56 @@
+.aboutSec {
+    color: white; 
+    padding-top: 20px; 
+    display: flex; 
+    justify-content: flex-start;
+}
+
+.leftSideAbout {
+    width: 320px; 
+}
+
+.ubcLogo {
+    width: 125px; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.rightSideAbout {
+    flex: 1; 
+    padding: 10px; 
+    margin: 10px; 
+    gap:10px; 
+}
+
+.edu {
+    display: flex; 
+    align-items: center; 
+    padding-bottom: 20px; 
+    padding-left: 10px; 
+}
+
+.eduContent {
+    padding: 12px; 
+}
+
+.edu4 {
+    font-size: 18px; 
+}
+
+.edup {
+    font-size: 11px; 
+}
+
+h3 {
+    font-size: 23px; 
+    padding-bottom: 10px; 
+}
+
+.headshot {
+    width: 320px;
+    height: auto;  
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+

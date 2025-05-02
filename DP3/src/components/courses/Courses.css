@@ -1,0 +1,12 @@
+.course-container {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap; 
+    padding: 10px; 
+    
+  }
+
+.course-container >div {
+    margin-bottom: 6px; 
+    margin-top: 6px; 
+}

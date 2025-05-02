@@ -1,0 +1,8 @@
+.languages-container {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap; 
+    padding: 10px; 
+  }
+  
+  

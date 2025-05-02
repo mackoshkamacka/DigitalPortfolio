@@ -6,8 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  padding: 10px;
+  padding: 30px;
+  padding-left: 5rem;
+  padding-right: 5rem;  
   background-color: #0e0e10;
+  
 }
 
 code {
@@ -17,16 +20,15 @@ code {
 
 h1 {
     color: #fafcfd;
-    padding-left: 10px; 
 }
 
 h2 {
     color: #dfedf3;
     font-size: 20px;
-    padding-left: 10px;
 }
 
-h4 {
-    color: #b1c7d1;
-    padding-left: 10px; 
-}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+
