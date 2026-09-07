@@ -1,17 +1,14 @@
 import React from 'react';
 import './CourseItem.css';
 
-const CourseItem = ({ title, courseTitle, desc }) => {
+const CourseItem = ({ title, courseTitle, desc, relevance = "general", onHover }) => {
   return (
-    <div className="courseItem">
-      <span className="tooltip">
-        {title}
-        <div className="tooltip-bubble">
-          <h5>{courseTitle}</h5>
-          <p>{desc}</p>
-        </div>
-        <div className="tooltip-arrow" />
-      </span>
+    <div
+      className={`courseItem tooltip tooltip--${relevance}`}
+      onMouseEnter={() => onHover({ title, courseTitle, desc })}
+      onMouseLeave={() => onHover(null)}
+    >
+      {title}
     </div>
   );
 };

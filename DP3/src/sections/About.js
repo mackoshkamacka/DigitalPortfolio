@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './About.css'; 
 import ubcLogo from '../images/ubcLogo.png';
 // import headshot from '../images/headshot.png'; 
@@ -6,7 +6,20 @@ import Languages from '../components/languages/Languages';
 import Courses from '../components/courses/Courses';
 import Projects from './Projects'
 
+
 const About = () => {
+
+    const cardRef = useRef(null);
+    const handleMouseMove = (e) => {
+        const card = cardRef.current;
+        if (!card) return;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+    };
+
     return (
         <div classname = "parent">
             <div className="aboutSec">
@@ -36,7 +49,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className = "rightSideAbout">
+                <div className = "rightSideAbout" ref={cardRef} onMouseMove={handleMouseMove}>
             
                     <h2>ABOUT ME</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
