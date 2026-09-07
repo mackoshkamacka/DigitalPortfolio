@@ -2,43 +2,60 @@ import React from 'react';
 import Item from './Item'; 
 import './Languages.css';
 
+import pythonIcon from '../../images/icons/python_icon.webp';
+import cPlusPlusIcon from '../../images/icons/c++_icon.webp';
+import javaIcon from '../../images/icons/java_icon.png';
+import javaScriptIcon from '../../images/icons/javaScrip_icon.png';
+import htmlIcon from '../../images/icons/html_icon.webp';
+import cssPlusIcon from '../../images/icons/css_logo.webp';
+import reactIcon from '../../images/icons/react_icon.webp';
+import phpIcon from '../../images/icons/php_icon.webp';
+import sqlIcon from '../../images/icons/sql_icon.png';
+import rIcon from '../../images/icons/r_icon.webp';
+
+
+
 const Languages = () => {
   const language = [
     {
         title: "Python",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" ,
+        logo: pythonIcon,
     },
     {
         title: "C/C++",  
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png", 
+        logo: cPlusPlusIcon, 
     },
     {
         title: "Java",
-        logo: "https://cdn.worldvectorlogo.com/logos/java-14.svg", 
+        logo: javaIcon, 
     },
     {
         title: "JavaScript",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png?20120221235433 ", 
+        logo: javaScriptIcon, 
     },
     {
         title: "HTML",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png", 
+        logo: htmlIcon, 
     },
     {
         title: "CSS",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png", 
+        logo: cssPlusIcon, 
     },
     {
         title: "React",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png", 
+        logo: reactIcon, 
     },
     {
         title: "PHP",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg", 
+        logo: phpIcon, 
     },
     {
         title: "SQL",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sql_data_base_with_logo.png/800px-Sql_data_base_with_logo.png?20210130181641", 
+        logo: sqlIcon, 
+    },
+    {
+        title: "R",
+        logo:rIcon, 
     },
   ];
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css'; 
 import ubcLogo from '../images/ubcLogo.png';
-import headshot from '../images/headshot.png'; 
+// import headshot from '../images/headshot.png'; 
 import Languages from '../components/languages/Languages';
 import Courses from '../components/courses/Courses';
 import Projects from './Projects'
@@ -11,13 +11,15 @@ const About = () => {
         <div classname = "parent">
             <div className="aboutSec">
                 <div className = "leftSideAbout">
-                    <img src= {headshot} alt="headshot" className="headshot"/>
+                    {/* <img src= {headshot} alt="headshot" className="headshot"/> */}
                     <h3>EDUCATION</h3>
                     <div className = "edu">
                         <div>
                             <img src={ubcLogo} alt="UBC logo" className="ubcLogo" />
                         </div>
                         <div className = "eduContent">
+                            <h3 className="edu3a">Combined Major in</h3>
+                            <h3 className="edu3b">Computer Science and Mathematics</h3>
                             <h4 className="edu4">The University of British Columbia</h4>
                             <p className = "edup">BSc. September 2024-August 2028</p>
                         </div>
