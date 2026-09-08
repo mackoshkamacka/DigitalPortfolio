@@ -6,7 +6,7 @@ import Gallery from '../components/gallery/Gallery';
 const Projects = () => {
   return (
     <div className="projects">
-        <h2>PERSONAL PROJECTS</h2>
+        <h1 className = "personalHeader">PERSONAL PROJECTS</h1>
         <Gallery />
     </div>
   );

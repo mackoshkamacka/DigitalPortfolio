@@ -1,0 +1,113 @@
+.tdcard {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    /* max-width: 700px; */
+    border: 1px solid #333;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, border-color 0.3s ease;
+    background-color: rgb(21, 21, 29);
+}
+
+.tdcard:hover {
+    transform: scale(1.02);
+    border-color: rgb(90, 90, 200);
+}
+
+.tdcard-title-col {
+    flex: 0 0 220px;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background-color: rgba(34, 34, 98, 0.25);
+    border-right: 1px solid #333;
+}
+
+.tdcard-title {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    color: white;
+    margin: 0;
+}
+
+.tdcard-content-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    color: white;
+}
+
+.tdcard-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(185, 185, 185);
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.tdcard-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.tdcard-link {
+    display: inline-block;
+    background-color: rgb(34, 34, 98);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 9000px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tdcard-link:hover {
+    background-color: rgb(90, 90, 200);
+    transform: translateY(-2px);
+}
+
+.tdcard-github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #444;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.tdcard-github:hover {
+    background-color: rgb(34, 34, 98);
+    border-color: rgb(90, 90, 200);
+    transform: translateY(-2px);
+}
+
+.tdcard-github-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Stack vertically on narrow screens */
+@media (max-width: 560px) {
+    .tdcard {
+        flex-direction: column;
+    }
+    .tdcard-title-col {
+        flex: 0 0 auto;
+        border-right: none;
+        border-bottom: 1px solid #333;
+        margin-left: 0;
+    }
+}

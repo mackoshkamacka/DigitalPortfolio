@@ -2,7 +2,9 @@
     color: white; 
     padding-top: 20px; 
     display: flex; 
-    justify-content: flex-start;
+    justify-content: center;
+    
+
 }
 
 .leftSideAbout {
@@ -15,7 +17,7 @@
     border-radius: 8px; 
 }
 
-.rightSideAbout {
+.rightSAbout {
     flex: 1; 
     padding: 10px; 
     margin: 10px; 
@@ -67,51 +69,107 @@ h3 {
     border-radius: 20px;
 }
 
+
+
+
 .rightSideAbout {
     position: relative;
+    isolation: isolate; /* creates a clean stacking context, keeps children's z-index contained */
     overflow: hidden;
-    background-color: rgb(44, 44, 50);
+    background-color: rgb(21, 21, 29);
     padding: 2rem;
     border-radius: 2rem;
     margin: 2rem;
-    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    border: 3px solid transparent;
+    border: 3px solid rgb(60, 60, 60);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .rightSideAbout::before {
     content: "";
     position: absolute;
     inset: 0;
+    z-index: 0;
     background: radial-gradient(
         500px circle at var(--x, 50%) var(--y, 50%),
-        rgba(90, 90, 220, 0.25),
+        rgba(90, 90, 220, 0.28),
         transparent 80%
     );
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
 }
-
+/* 
 .rightSideAbout:hover::before {
     opacity: 1;
     animation: glow-pulse 2.5s ease-in-out infinite;
 }
 
 @keyframes glow-pulse {
-    0%, 100% {
-        opacity: 0.7;
-    }
-    50% {
-        opacity: 1;
-    }
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
 }
-.rightSideAbout:hover::before {
-    opacity: 1;
-}
-
 
 .rightSideAbout:hover {
-    background-color: rgb(50, 50, 62);
     border-color: rgb(90, 90, 200);
-     transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+} */
+
+/* everything real (h2, Projects, etc) goes inside this wrapper */
+/* .rightSideAbout-content {
+    position: relative;
+    z-index: 1;
+} */
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .aboutSec {
+        flex-wrap: wrap;
+    }
+
+    .leftSideAbout {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .ubcLogo,
+    .headshot {
+        width: 100px;
+    }
+
+    .edu {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .edu3b {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    .rightSideAbout {
+        padding: 1.25rem;
+        margin: 1rem 0.5rem;
+        width: calc(100% - 1rem);
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutSec {
+        padding-top: 10px;
+    }
+
+    .headshot {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .rightSideAbout {
+        border-radius: 1.25rem;
+        padding: 1rem;
+    }
 }

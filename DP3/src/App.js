@@ -10,9 +10,9 @@ function App() {
       <div className="p-4">
         <nav className="mb-4">
           {/* <a href="/" className="mr-4 text-blue-500">Home</a> */}
-          <a href="#about">About </a> 
+          {/* <a href="#about">About </a> 
           <a href="/" className="mr-4 text-blue-500">Projects </a>
-          <a href="/" className="mr-4 text-blue-500">Resume </a>
+          <a href="/" className="mr-4 text-blue-500">Resume </a> */}
           {/* Remove Projects link */}
           {/* <a href="/projects" className="mr-4 text-blue-500">Projects</a> */}
           {/* Remove About link */}

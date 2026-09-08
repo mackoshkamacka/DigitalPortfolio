@@ -42,15 +42,11 @@ const Languages = () => {
         logo: cssPlusIcon, 
     },
     {
-        title: "React",
-        logo: reactIcon, 
-    },
-    {
         title: "PHP",
         logo: phpIcon, 
     },
     {
-        title: "SQL",
+        title: "SQL (Postgres)",
         logo: sqlIcon, 
     },
     {

@@ -2,14 +2,12 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin: 20px 0;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
     padding: 10px;
     gap: 5px; 
     overflow: hidden; 
@@ -44,3 +42,14 @@
       transform: translateX(calc(-2 * (300px + 20px)));
     }
   }
+
+@media (max-width: 480px) {
+    .gallery {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        animation: none; /* stop the horizontal scroll ticker on mobile */
+        padding: 10px 0;
+        gap: 12px;
+    }
+}

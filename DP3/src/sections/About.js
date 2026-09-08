@@ -5,6 +5,8 @@ import ubcLogo from '../images/ubcLogo.png';
 import Languages from '../components/languages/Languages';
 import Courses from '../components/courses/Courses';
 import Projects from './Projects'
+import Experience from './Experience'
+import LibsAndFrameworks from '../components/LibsAndFrameworks/LibsAndFrameworks';
 
 
 const About = () => {
@@ -22,6 +24,8 @@ const About = () => {
 
     return (
         <div classname = "parent">
+            
+
             <div className="aboutSec">
                 <div className = "leftSideAbout">
                     {/* <img src= {headshot} alt="headshot" className="headshot"/> */}
@@ -40,8 +44,12 @@ const About = () => {
                     <h3>SKILLS</h3>
                     <div className="skills">
                         <div className = "langFrame"> 
-                            <h4 className = "skill4">Languages & Frameworks</h4>
+                            <h4 className = "skill4">Languages</h4>
                             <Languages />
+                        </div>
+                        <div>
+                            <h4 className = "skill4">Frameworks; Libraries; & DevTools</h4>
+                            <LibsAndFrameworks />
                         </div>
                         <div className = "courProf"> 
                             <h4 className = "skill4">Courses</h4>
@@ -49,18 +57,11 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className = "rightSideAbout" ref={cardRef} onMouseMove={handleMouseMove}>
-            
-                    <h2>ABOUT ME</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-                        est laborum.</p> 
-                     <h2>TECHNICAL WORK EXPERIENCE</h2>
-                    <Projects /> 
+                <div className="rightSideAbout" ref={cardRef} onMouseMove={handleMouseMove}>
+                    <div className="rightSideAbout-content">
+                        <Experience />
+                        <Projects />
+                    </div>
                 </div>
             </div>
         </div>
