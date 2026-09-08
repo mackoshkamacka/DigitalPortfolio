@@ -221,6 +221,11 @@
         text-align: center;
     }
 
+    .hero-scroll-indicator {
+        left: auto;
+        transform: none;
+    }
+
     .hero-title {
         padding-right: 0;
         padding-bottom: 2rem;
