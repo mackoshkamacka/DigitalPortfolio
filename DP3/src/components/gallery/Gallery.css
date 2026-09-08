@@ -46,10 +46,11 @@
 @media (max-width: 480px) {
     .gallery {
         width: 100%;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        /* flex-direction: column;
+        flex-wrap: nowrap; */
         animation: none; /* stop the horizontal scroll ticker on mobile */
         padding: 10px 0;
         gap: 12px;
+        justify-content: center;
     }
-}
+} 
