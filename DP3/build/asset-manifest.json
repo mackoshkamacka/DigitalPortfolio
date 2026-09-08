@@ -1,17 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.39f615f1.css",
-    "main.js": "/static/js/main.789ab661.js",
+    "main.css": "/static/css/main.ca67acbe.css",
+    "main.js": "/static/js/main.50f16115.js",
     "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
-    "static/media/headshot.png": "/static/media/headshot.f8d8b88893e57c63e379.png",
+    "static/media/faceForward_thumb.png": "/static/media/faceForward_thumb.5ee0b03fcf5d1cffce23.png",
+    "static/media/snapScan_thumb.png": "/static/media/snapScan_thumb.e17e4215e2b06cbd5aab.png",
+    "static/media/rd-flg_thumb.png": "/static/media/rd-flg_thumb.5ca9843e9a339935b232.png",
+    "static/media/matplotlib_icon.webp": "/static/media/matplotlib_icon.61658a47eed3d76db7ce.webp",
+    "static/media/sql_icon.png": "/static/media/sql_icon.85fb38d6773862e917f4.png",
+    "static/media/php_icon.webp": "/static/media/php_icon.c9101eee04363be50cac.webp",
+    "static/media/html_icon.webp": "/static/media/html_icon.b90eea39bf2d770dc9c7.webp",
+    "static/media/r_icon.webp": "/static/media/r_icon.c7ae4f0161c70d3cec64.webp",
+    "static/media/firebase_icon.png": "/static/media/firebase_icon.b37780771202cf8db37b.png",
+    "static/media/react_icon.webp": "/static/media/react_icon.7f7fbbc74ea8bd833a84.webp",
+    "static/media/css_logo.webp": "/static/media/css_logo.f097d2a2e5ad9f80cd7b.webp",
+    "static/media/jupyter_icon.webp": "/static/media/jupyter_icon.7cda6e686f4f83ad83b8.webp",
     "static/media/ubcLogo.png": "/static/media/ubcLogo.720cf7636353aa265d22.png",
+    "static/media/nextjs_icon.png": "/static/media/nextjs_icon.150cb48f8f6a34a56b63.png",
+    "static/media/java_icon.png": "/static/media/java_icon.00c3be7f346b2c00213d.png",
+    "static/media/python_icon.webp": "/static/media/python_icon.e8da53f69e2c976bc243.webp",
+    "static/media/c++_icon.webp": "/static/media/c++_icon.00a00b750a380aad8efa.webp",
+    "static/media/gitHub_icon.webp": "/static/media/gitHub_icon.bea9958f900bc839e5b5.webp",
+    "static/media/junit.svg": "/static/media/junit.48982fcbf8b763812aa368574cb79434.svg",
     "index.html": "/index.html",
-    "main.39f615f1.css.map": "/static/css/main.39f615f1.css.map",
-    "main.789ab661.js.map": "/static/js/main.789ab661.js.map",
+    "main.ca67acbe.css.map": "/static/css/main.ca67acbe.css.map",
+    "main.50f16115.js.map": "/static/js/main.50f16115.js.map",
     "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39f615f1.css",
-    "static/js/main.789ab661.js"
+    "static/css/main.ca67acbe.css",
+    "static/js/main.50f16115.js"
   ]
 }
