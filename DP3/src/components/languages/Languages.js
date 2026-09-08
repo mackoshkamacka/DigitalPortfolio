@@ -8,7 +8,7 @@ import javaIcon from '../../images/icons/java_icon.png';
 import javaScriptIcon from '../../images/icons/javaScrip_icon.png';
 import htmlIcon from '../../images/icons/html_icon.webp';
 import cssPlusIcon from '../../images/icons/css_logo.webp';
-import reactIcon from '../../images/icons/react_icon.webp';
+// import reactIcon from '../../images/icons/react_icon.webp';
 import phpIcon from '../../images/icons/php_icon.webp';
 import sqlIcon from '../../images/icons/sql_icon.png';
 import rIcon from '../../images/icons/r_icon.webp';
