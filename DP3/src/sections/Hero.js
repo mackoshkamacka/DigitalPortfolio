@@ -14,9 +14,9 @@ const Hero = () => {
       </h1>
 
       <p className="hero-subtitle">
-        I'm a Math & CS student at UBC, interested in full-stack SWE and research. 
+        I'm a Math & CS student at UBC, targeting full-stack SWE and research roles. 
         Currently, most of my time is spent doing research at UBC's visual Cognition Lab (NOVA Project),
-        and helping build/maintain UBC's Science Undergraduate Society's webs
+        and helping build/maintain UBC's Science Undergraduate Society's website.
       </p>
 
       {/* <div className="hero-actions">
