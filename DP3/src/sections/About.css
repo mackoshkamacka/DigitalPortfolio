@@ -125,6 +125,7 @@ h3 {
 @media (max-width: 768px) {
     .aboutSec {
         flex-wrap: wrap;
+        padding: 1rem; 
     }
 
     .leftSideAbout {

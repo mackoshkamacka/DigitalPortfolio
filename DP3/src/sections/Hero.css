@@ -199,14 +199,14 @@
 
 @media (max-width: 768px) {
     .hero {
-        display: flex;
+        display: inline;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 0;
-        padding-top: 2rem; 
-        padding-bottom: 2rem;  
+        /* padding: 2rem;  */
+        margin-bottom: 2rem;
+        width: 100%; 
     }
 
     .hero-grid {
@@ -222,13 +222,17 @@
     }
 
     .hero-scroll-indicator {
-        left: auto;
+        display: flex; 
+        align-items: center;
         transform: none;
+        opacity: 0;
     }
 
     .hero-title {
         padding-right: 0;
         padding-bottom: 2rem;
+        line-height: 1;
+        padding-top: 10rem;
     }
 
     .hero-subtitle {
